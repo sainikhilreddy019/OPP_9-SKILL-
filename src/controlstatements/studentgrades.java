@@ -1,0 +1,32 @@
+package controlstatements;
+
+import java.util.Scanner;
+public class studentgrades {
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter student's marks (0 to 100): ");
+        int marks = sc.nextInt();
+
+        if (marks >= 90 && marks <= 100) {
+            System.out.println("Grade: A+");
+        } else if (marks >= 80) {
+            System.out.println("Grade: A");
+        } else if (marks >= 70) {
+            System.out.println("Grade: B");
+        } else if (marks >= 60) {
+            System.out.println("Grade: C");
+        } else if (marks >= 50) {
+            System.out.println("Grade: D");
+        } else if (marks >= 35) {
+            System.out.println("Grade: E (Pass)");
+        } else if (marks >= 0) {
+            System.out.println("Grade: F (Fail)");
+        } else {
+            System.out.println("Invalid marks! Please enter a value between 0 and 100.");
+        }
+
+        sc.close();
+
+}
+}
